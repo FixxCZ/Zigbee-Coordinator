@@ -1,18 +1,19 @@
-## Rozdeleni koordinatoru
-#### Starsi generace:
-- **CC2530**: 2.4GHz Zigbee a IEEE 802.15.4 wireless MCU. Intel 8051 core, 256kB Flash, ma jenom 8kB RAM. Vyzaduje externi programator pro nahrani firmware.<br>
-- **CC2531**: Stejny jako CC2530 ale ma vestavene USB. Pouziva se v rozsirenych levnych Zigbee koordinatorech. Intel 8051 core, 256 Flash, ma jen 8kB RAM. Vyzaduje externi programator pro nahrani firmware.
+## Rozdělení koordinátorů
+#### Starší generace:
+- **CC2530**: 2.4GHz Zigbee a IEEE 802.15.4 wireless MCU. Intel 8051 core, 256kB Flash, má jenom 8kB RAM. Vyžaduje externí programátor pro nahrání firmware.
+- **CC2531**: Stejný jako CC2530 ale má vestavěné USB. Používá se v rozšířených levných Zigbee koordinátorech. Intel 8051 core, 256 Flash, má jen 8kB RAM. Vyžaduje externí programátor pro nahrání firmware.
 
-#### Soucasna generace:
-- **CC2538**: 2.4GHz Zigbee, 6LoWPAN, a IEEE 802.15.4 wireless MCU. ARM Cortex-M3 core s 512kB Flash a 32kB RAM.<br>
-- **CC2538 + CC2592**: Stejny jako CC2538, ale doplneny o zesilovac CC2592. Zesileni vysilani na 22dBm a zlepseni prijimani o 3dB. [Viz. datasheet.](https://www.ti.com/lit/ds/symlink/cc2592.pdf?ts=1610831220971 "Viz. data sheet.")
+#### Současná generace:
+- **CC2538**: 2.4GHz Zigbee, 6LoWPAN, a IEEE 802.15.4 wireless MCU. ARM Cortex-M3 core s 512kB Flash a 32kB RAM.
+- **CC2538 + CC2592**: Stejný jako CC2538, ale doplněný o zesilovač CC2592. Zesílení vysílání na 22dBm a zlepšení příjmu o 3dB. [Viz. data sheet.](https://www.ti.com/lit/ds/symlink/cc2592.pdf?ts=1610831220971 "Viz. data sheet.")
 
-#### Nejnovejsi generace:
-- **CC2652R**: Podporuje vicero protokolu na 2.4GHz jako treba (Zigbee, Bluetooth, Thread, ...). Cortex-M0 pro radiovou cast a Cortex-M4F pro aplikacni cast a 80kB RAM. Vysilaci vykon 5 dBm.  Tento chip je pouzity v koordinatoru Electrolama zzh!.<br>
-- **CC2652P**: Chipset CC2652R s vestavenym zesilovacem. Neni zpetne kompatibilni s CC2652R/CC2652RB. Vysilaci vykon 20 dBm<br>
+#### Nejnovější generace:
+- **CC2652R**: Podporuje vícero protokolů na 2.4GHz jako třeba (Zigbee, Bluetooth, Thread, ...). Cortex-M0 pro rádiovou část a Cortex-M4F pro aplikační část a 80kB RAM. Vysílací výkon 5 dBm. Tento chip je použitý v coordinatoru Electrolama zzh!.
+- **CC2652RB**: Identický jako CC2652R, ale nevyžaduje externí krystal. Používá ho slaesh's CC2652RB stick.
+- **CC2652P**: Chipset CC2652R s vestavěným zesilovačem. Vysílací výkon 20 dBm. Bude v budoucnu použitý v Electrolama zzh-p.
 
-*Zdroj informaci [https://electrolama.com/projects/zig-a-zig-ah/](https://electrolama.com/projects/zig-a-zig-ah/ "Zdroj") + TI data sheets*
-## Podporovany firmware:
+*Zdroj informací [https://electrolama.com/projects/zig-a-zig-ah/](https://electrolama.com/projects/zig-a-zig-ah/ "Zdroj") + TI data sheets*
+## Podporovaný firmware:
 <table>
   <tr>
     <td><b>Z-Stack</b></td>
@@ -76,7 +77,7 @@
   </tr>
 </table>
 
-###### Vysvetlivky:
-**Direct children:** Pocet zarizeni, ktere se mohou pripojit primo na koordinatora. Neni to maximalni pocet zarizeni v siti, ale po dosazeni tohoto poctu zarizeni musite do site pridat aspon jeden router, aby mohla sit rust dal. Router je vetsinou kazdy prvek, ktery je trvale zapojeny do elektriny, jako je treba zasuvka, zarovka, ale zaleri na konkretnim vyrobci.<br>
-**Routes:** Pocet cest "routes" ktere muze koordinator drzet v pameti. Napriklad 100/200 znamena, ze koordinator zvladne 100 normalnich a 200 source routes.  Source routes zlepsuji celkovou odezvu a vykon vetsich siti se 40+ zarizenimi.<br>
+###### Vysvětlivky:
+**Direct children:** Počet zařízení, které se mohou připojit přímo na koordinátora. Není to maximální počet zařízení v síti, ale po dosažení tohoto počtu zařízení musíte do sítě přidat aspoň jeden router, aby mohla sít růst dál. Router je většinou každý prvek, který je trvale zapojený do elektřiny, jako je třeba zásuvka, žárovka, ale záleží na konkrétním výrobci.<br>
+**Routes:** Počet cest "routes" které může koordinátor držet v paměti. Například 100/200 znamená, že koordinátor zvládne 100 normálních a 200 source routes. Source routes zlepšují celkovou odezvu a výkon větších sítí s 40+ zařízeními.<br>
 *Zdroj: [https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator](https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator "https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator")*
