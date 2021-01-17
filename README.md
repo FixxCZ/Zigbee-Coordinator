@@ -1,5 +1,4 @@
 ## Rozdeleni koordinatoru
-#### Podle chipsetu
 #### Starsi generace:
 - **CC2530**: 2.4GHz Zigbee a IEEE 802.15.4 wireless MCU. Intel 8051 core, 256kB Flash, ma jenom 8kB RAM. Vyzaduje externi programator pro nahrani firmware.<br>
 - **CC2531**: Stejny jako CC2530 ale ma vestavene USB. Pouziva se v rozsirenych levnych Zigbee koordinatorech. Intel 8051 core, 256 Flash, ma jen 8kB RAM. Vyzaduje externi programator pro nahrani firmware.
