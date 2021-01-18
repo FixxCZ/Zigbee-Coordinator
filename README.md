@@ -1,3 +1,9 @@
+###### Novinky:<br>
+**17.1.2021:** CC2652P je asi nedostatkové zboží. Prodejce a asi i výrobce, kde sem objednal první 4 kusy, limituje počet kusů na 6 na zákazníka, takže mi dovolí přiobjednat už jen 2. Hledám alternativní prodejce a několik dalších jich má podobný limit. Nakonec nacházím a po několika ověřeních, že se jedná opravdu o identický modul, objednávám o 20% dráže než u výrobce. S CC2538 není žádný problém a cena je o něco málo vyšší než u CC2652P přece jen obsahuje extra zesilovač, kdežto CC2652P ho má integrovaný.<br>
+**16.1.2021:** Na FB se přihlásilo okolo 15 lidí se zájmem o různé verze koordinátora. Zacínám objednávat vše potřebné pro takové množství.<br>
+**10.1.2021:** Dorazily první plošné spoje a půlka (15) je jich pro čip CC2652P. Někdo si asi ve stejnou chvíli objednal témeř identický plošnák, jen pro jiný čip a výrobce nám smíchal objednávky. Dostávám refund na půlku objednávky, takže JLCPCB dostává palec nahoru. Zjištuju, že do koše asi nepůjdou, protože CC2652P není vůbec špatný. Objednávám 4 kusy CC2652P "na zkoušku".<br>
+**23.12.2020:** Po načtení spousty ruských stránek objednávám první plošné spoje pro koordinatora CC2538 a 4 kusy samotných čipů.
+
 ## Rozdělení koordinátorů
 #### Starší generace:
 - **CC2530**: 2.4GHz Zigbee a IEEE 802.15.4 wireless MCU. Intel 8051 core, 256kB Flash, má jenom 8kB RAM. Vyžaduje externí programátor pro nahrání firmware.
