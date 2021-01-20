@@ -4,6 +4,8 @@
 **10.1.2021:** Dorazily první plošné spoje a půlka (15) je jich pro čip CC2652P. Někdo si asi ve stejnou chvíli objednal témeř identický plošnák, jen pro jiný čip a výrobce nám smíchal objednávky. Dostávám refund na půlku objednávky, takže JLCPCB dostává palec nahoru. Zjištuju, že do koše asi nepůjdou, protože CC2652P není vůbec špatný. Objednávám 4 kusy CC2652P "na zkoušku".<br>
 **23.12.2020:** Po načtení spousty ruských stránek objednávám první plošné spoje pro koordinatora CC2538 a 4 kusy samotných čipů.
 
+#### nutna prodluzka pokud se pouziva USB 3.0 , wifi a BT https://www.alza.cz/premiumcord-usb-2-0-prodluzovaci?dq=4590864
+
 ## Rozdělení koordinátorů
 #### Starší generace:
 - **CC2530**: 2.4GHz Zigbee a IEEE 802.15.4 wireless MCU. Intel 8051 core, 256kB Flash, má jenom 8kB RAM. Vyžaduje externí programátor pro nahrání firmware.
@@ -17,7 +19,6 @@
 - **CC2652R**: Podporuje vícero protokolů na 2.4GHz jako třeba (Zigbee, Bluetooth, Thread, ...). Cortex-M0 pro rádiovou část a Cortex-M4F pro aplikační část a 80kB RAM. Vysílací výkon 5 dBm. Tento chip je použitý v coordinatoru Electrolama zzh!.
 - **CC2652RB**: Identický jako CC2652R, ale nevyžaduje externí krystal. Používá ho slaesh's CC2652RB stick.
 - **CC2652P**: Chipset CC2652R s vestavěným zesilovačem. Vysílací výkon 20 dBm. Bude v budoucnu použitý v Electrolama zzh-p.
-
 *Zdroj informací [https://electrolama.com/projects/zig-a-zig-ah/](https://electrolama.com/projects/zig-a-zig-ah/ "Zdroj") + TI data sheets*
 ## Podporovaný firmware:
 <table>
