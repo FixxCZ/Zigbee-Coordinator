@@ -10,7 +10,7 @@
 #### Nejnovější generace:
 - **CC2652R**: Podporuje vícero protokolů na 2.4GHz jako třeba (Zigbee, Bluetooth, Thread, ...). Cortex-M0 pro rádiovou část a Cortex-M4F pro aplikační část a 80kB RAM. Vysílací výkon 5 dBm. Tento chip je použitý v coordinatoru Electrolama zzh!.
 - **CC2652RB**: Identický jako CC2652R, ale nevyžaduje externí krystal. Používá ho slaesh's CC2652RB stick.
-- **CC2652P**: Chipset CC2652R s vestavěným zesilovačem. Vysílací výkon 20 dBm. Bude v budoucnu použitý v Electrolama zzh-p.
+- **CC2652P**: Chipset CC2652R s vestavěným zesilovačem. Vysílací výkon 20 dBm. Bude v budoucnu použitý v Electrolama zzh-p.<br>
 *Zdroj informací [https://electrolama.com/projects/zig-a-zig-ah/](https://electrolama.com/projects/zig-a-zig-ah/ "Zdroj") + TI data sheets*
 ## Podporovaný firmware:
 <table>
