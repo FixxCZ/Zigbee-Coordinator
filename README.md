@@ -31,8 +31,6 @@
     <td></td>
   </tr>
   <tr>
-  </tr>
-  <tr>
     <td>Z-Stack_Home_1.2 (source_routing)</td>
     <td>CC2531</td>
     <td>1.2 HA</td>
