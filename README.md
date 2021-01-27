@@ -1,9 +1,10 @@
-Jak si vybrat
-RPI Shield vs. USB verze
-Wifi a Bluetooth(BT) vysílají na stejné frekvenci jako Zigbee, takže pokud používáte na vaší Raspberry Pie(RPi) jedno z toho a potřebujete Zigbee signálem pokrýt co nejvetší oblast tak volte variantu USB a připojte ji prodlužovacím USB kabelem k RPi.
-Pokud máte RPi připojenou LAN kabelem a BT ani Wifi nepoužíváte, vypněte je v nastavení a s klidem zvolte variantu RPi shieldu, budete mít vše v jedné krabičce. 
-Uživatelé RPi 4 si musí dát pozor na to jestli nepoužívají USB 3.0 zařízení (typicky disk) pripojený do USB 3.0 portu (modré porty)
-
+## Jak si vybrat
+#### RPi Shield vs. USB verze
+Wifi a Bluetooth(BT) vysílají na stejné frekvenci jako Zigbee, takže pokud používáte na vaší Raspberry Pie(RPi) jedno z toho a potřebujete Zigbee signálem pokrýt co nejvetší oblast tak volte variantu USB a připojte ji 0.5m USB prodlužovacím kabelem k RPi.<br>
+Pokud máte RPi připojenou LAN kabelem a BT ani Wifi nepoužíváte, vypněte je v nastavení a s klidem zvolte variantu RPi shieldu, budete mít vše v jedné krabičce. <br>
+Uživatelé RPi 4 si musí dát pozor na to jestli nepoužívají USB 3.0 zařízení (typicky disk) pripojený do USB 3.0 portu (modré porty)<br>
+![USB3](/img/usb3-blue.jpg)
+![USB3](/img/USB3.png)
 
 
 ## Rozdělení koordinátorů
@@ -88,4 +89,4 @@ Uživatelé RPi 4 si musí dát pozor na to jestli nepoužívají USB 3.0 zaří
 *Zdroj: [https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator](https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator "https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator")*
 
 
-#### nutna prodluzka pokud se pouziva USB 3.0 , wifi a BT https://www.alza.cz/premiumcord-usb-2-0-prodluzovaci?dq=4590864
+
