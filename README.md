@@ -23,7 +23,7 @@
     <td><b>Notes</b></td>
   </tr>
   <tr>
-    <td rowspan="2">Z-Stack_Home_1.2 (default)</td>
+    <td>Z-Stack_Home_1.2 (default)</td>
     <td>CC2531</td>
     <td>1.2 HA</td>
     <td>20</td>
