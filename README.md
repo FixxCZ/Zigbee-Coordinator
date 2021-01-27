@@ -1,3 +1,11 @@
+Jak si vybrat
+RPI Shield vs. USB verze
+Wifi a Bluetooth(BT) vysílají na stejné frekvenci jako Zigbee, takže pokud používáte na vaší Raspberry Pie(RPi) jedno z toho a potřebujete Zigbee signálem pokrýt co nejvetší oblast tak volte variantu USB a připojte ji prodlužovacím USB kabelem k RPi.
+Pokud máte RPi připojenou LAN kabelem a BT ani Wifi nepoužíváte, vypněte je v nastavení a s klidem zvolte variantu RPi shieldu, budete mít vše v jedné krabičce. 
+Uživatelé RPi 4 si musí dát pozor na to jestli nepoužívají USB 3.0 zařízení (typicky disk) pripojený do USB 3.0 portu (modré porty)
+
+
+
 ## Rozdělení koordinátorů
 #### Starší generace:
 - **CC2530**: 2.4GHz Zigbee a IEEE 802.15.4 wireless MCU. Intel 8051 core, 256kB Flash, má jenom 8kB RAM. Vyžaduje externí programátor pro nahrání firmware.
