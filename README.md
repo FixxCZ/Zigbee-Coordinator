@@ -1,3 +1,5 @@
+[Aktuální novinky zde](https://github.com/FixxCZ/Zigbee-Coordinator/blob/main/novinky.md)
+
 ## Jak si vybrat
 #### RPi Shield vs. USB verze
 Wifi a Bluetooth(BT) vysílají na stejné frekvenci jako Zigbee, takže pokud používáte na vaší Raspberry Pie(RPi) jedno z toho a potřebujete Zigbee signálem pokrýt co nejvetší oblast tak volte variantu USB a připojte ji 0.5m USB prodlužovacím kabelem k RPi.<br>
