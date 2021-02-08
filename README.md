@@ -90,5 +90,3 @@ Uživatelé RPi 4 si musí dát pozor na to jestli nepoužívají USB 3.0 zaří
 **Routes:** Počet cest "routes" které může koordinátor držet v paměti. Například 100/200 znamená, že koordinátor zvládne 100 normálních a 200 source routes. Source routes zlepšují celkovou odezvu a výkon větších sítí s 40+ zařízeními.<br>
 *Zdroj: [https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator](https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator "https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator")*
 
-
-
