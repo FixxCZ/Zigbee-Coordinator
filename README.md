@@ -126,8 +126,8 @@ Funce LED diod je daná firmware nahraným v koordinatoru, takže pokud si tam n
 **CC2538** <br>
 LED1 (zelená) Power LED.<br>
 LED2 (žlutá) Zatím nevyužitá.<br>
-LED3 (modrá) Je povoleno párování nových zařízení (permit_join: true).<br>
-LED4 (červená) Probíha aktivní datový přenos.<br>
+LED3 (modrá) Bliká když je povoleno párování nových zařízení (permit_join: true).<br>
+LED4 (červená) Problikává když probíha datový přenos.<br>
 <br>
 **CC2652P** <br>
 LED1 (zelená) svítí pokud se nepoužívá vestavěný zesilovač (vysílací výkon je mezi -20 až 5 dBm)<br>
