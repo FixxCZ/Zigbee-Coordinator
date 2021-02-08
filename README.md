@@ -1,5 +1,6 @@
 [Aktuální novinky zde](https://github.com/FixxCZ/Zigbee-Coordinator/blob/main/novinky.md)
 
+  
 ## Jak si vybrat
 #### RPi Shield vs. USB verze
 Wifi a Bluetooth(BT) vysílají na stejné frekvenci jako Zigbee, takže pokud používáte na vaší Raspberry Pie(RPi) jedno z toho a potřebujete Zigbee signálem pokrýt co nejvetší oblast tak volte variantu USB a připojte ji 0.5m USB prodlužovacím kabelem k RPi.<br>
@@ -90,7 +91,7 @@ Uživatelé RPi 4 si musí dát pozor na to jestli nepoužívají USB 3.0 zaří
 **Routes:** Počet cest "routes" které může koordinátor držet v paměti. Například 100/200 znamená, že koordinátor zvládne 100 normálních a 200 source routes. Source routes zlepšují celkovou odezvu a výkon větších sítí s 40+ zařízeními.<br>
 *Zdroj: [https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator](https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator "https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator")*
 
-## Jak si nastavit nový koordinátor vZigbee2MQTT
+## Jak si nastavit nový koordinátor v Zigbee2MQTT
 K vaší už existující konfiguraci je nutné přidat několik parametrů.<br>
 Změna nastavení portu - buď přímo na RPi můžete spustit příkaz **ls -l /dev/serial/by-id/** nebo v Home Assistant v menu Supervisor > System > v okýnku Host jsou tři tečky a tam je Hardware.<br>
 Výsledek by měl vypadat nějak takhle:
@@ -121,6 +122,7 @@ experimental:
 Port 8485 potřebujete pokud máte Home Assitant v Dockeru, jinak můžete použí výchozí port 8080. Samozřejmě za předpokladu, že nepoužíváte SOCAT. Rozhraní pak poběží na stejné adrese jako Home Assistant jen na portu 8485 a ne 8123. Přídání do sidebaru mě nefunguje, ale třeba se vám zadaří.
 
 ### LED diody
+Funce LED diod je daná firmware nahraným v koordinatoru, takže pokud si tam nahrajete jiný, můžou ukazovat něco jiného.<br>
 **CC2538** <br>
 LED1 (zelená) Power LED.<br>
 LED2 (žlutá) Zatím nevyužitá.<br>
