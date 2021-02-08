@@ -90,3 +90,43 @@ Uživatelé RPi 4 si musí dát pozor na to jestli nepoužívají USB 3.0 zaří
 **Routes:** Počet cest "routes" které může koordinátor držet v paměti. Například 100/200 znamená, že koordinátor zvládne 100 normálních a 200 source routes. Source routes zlepšují celkovou odezvu a výkon větších sítí s 40+ zařízeními.<br>
 *Zdroj: [https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator](https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator "https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator")*
 
+## Jak si nastavit nový koordinátor vZigbee2MQTT
+K vaší už existující konfiguraci je nutné přidat několik parametrů.<br>
+Změna nastavení portu - buď přímo na RPi můžete spustit příkaz **ls -l /dev/serial/by-id/** nebo v Home Assistant v menu Supervisor > System > v okýnku Host jsou tři tečky a tam je Hardware.<br>
+Výsledek by měl vypadat nějak takhle:
+```
+pi@raspberrypi:~ $ ls -l /dev/serial/by-id/
+lrwxrwxrwx 1 root root 13 Feb  7 18:45 usb-1a86_USB_Serial-if00-port0 -> ../../ttyUSB0
+```
+Do configurace tedy napíšeme tohle:
+```
+serial:
+  port: /dev/serial/by-id/usb-1a86_USB_Serial-if00-port0
+
+advanced:
+  baudrate: 115200  #tahle položka je nutná protože používáme UART převodník viz. níže
+  rtscts: false  #tahle funkce je vypnutá protože řízení toku vyžaduje jiný FW a nefunguje dobře na RPi
+
+experimental:
+  transmit_power: 20  #toto funguje jen pro CC2652P kde je možné výkon řídit. 20 je maximum, dostupné hodnoty jsou -20, -18, -15, -12, -10, -9, -6, -5, -3, 0, 1..5, 14..20
+```
+Na desce je přítomný UART převodník CH340, aby bylo možné nahrávat nový FW bez nutnosti dalšího HW (J-Link), z toho důvodu se koordinátor nehlásí jako třeba usb-Texas_Instruments_TI_CC2538_USB, ale jako usb-1a86_USB_Serial-if00-port0.<br>
+Doporučuju si zapnout i nový Zigbee2MQTT frontend:
+```
+frontend:
+  port: 8485
+experimental:
+  new_api: true  #tahle hodnota je aktuálně nutná jen pokud bežíte na Home Assitant. Stand alone instalace Zigbee2MQTT ji nevyžaduje.
+``` 
+Port 8485 potřebujete pokud máte Home Assitant v Dockeru, jinak můžete použí výchozí port 8080. Samozřejmě za předpokladu, že nepoužíváte SOCAT. Rozhraní pak poběží na stejné adrese jako Home Assistant jen na portu 8485 a ne 8123. Přídání do sidebaru mě nefunguje, ale třeba se vám zadaří.
+
+### LED diody
+**CC2538** <br>
+LED1 (zelená) Power LED.<br>
+LED2 (žlutá) Zatím nevyužitá.<br>
+LED3 (modrá) Je povoleno párování nových zařízení (permit_join: true).<br>
+LED4 (červená) Probíha aktivní datový přenos.<br>
+<br>
+**CC2652P** <br>
+LED1 (zelená) svítí pokud se nepoužívá vestavěný zesilovač (vysílací výkon je mezi -20 až 5 dBm)<br>
+LED2 (červená) svítí pokud se využívá vestavěný zesilovač (vysílací výkon je mezi 15 až 20 dBm)<br>
