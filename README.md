@@ -91,6 +91,11 @@ Uživatelé RPi 4 si musí dát pozor na to jestli nepoužívají USB 3.0 zaří
 **Routes:** Počet cest "routes" které může koordinátor držet v paměti. Například 100/200 znamená, že koordinátor zvládne 100 normálních a 200 source routes. Source routes zlepšují celkovou odezvu a výkon větších sítí s 40+ zařízeními.<br>
 *Zdroj: [https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator](https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator "https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator")*
 
+**Je lepší CC2538+CC2592 nebo CC2652P?**<br>
+CC2652P vede na poli výpočetního výkonu, CPU má 48MHz a disponuje 80KB+8KB SRAM, CC2538 má 32MHz a 32KB SRAM. Pro porovnání CC2531 ma takt CPU 12MHz a 8KB SRAM.<br>
+Co se týče vysílacího a přijímacího výkonu, tak příjem je stejný, ale vysílací výkon má CC2538 díky zesilovači CC2592 o pár decibel lepší, CC2652P má zase plíškem odstíněný čip už těsne za anténou a i konektor antény je pájená napřímo.<br>
+
+
 ## Jak si nastavit nový koordinátor v Zigbee2MQTT
 K vaší už existující konfiguraci je nutné přidat několik parametrů.<br>
 Změna nastavení portu - buď přímo na RPi můžete spustit příkaz **ls -l /dev/serial/by-id/** nebo v Home Assistant v menu Supervisor > System > v okýnku Host jsou tři tečky a tam je Hardware.<br>
