@@ -132,3 +132,7 @@ LED4 (červená) Problikává když probíha datový přenos.<br>
 **CC2652P** <br>
 LED1 (zelená) svítí pokud se nepoužívá vestavěný zesilovač (vysílací výkon je mezi -20 až 5 dBm)<br>
 LED2 (červená) svítí pokud se využívá vestavěný zesilovač (vysílací výkon je mezi 15 až 20 dBm)<br>
+
+### Krabičky - 3D Tisk
+CC2538 - https://www.thingiverse.com/thing:4437685 Soubory bottom_usb_ant.STL a top_ant.STL. Vyzkoušeno a pasuje pěkně.<br>
+CC2652P - https://www.thingiverse.com/thing:4695634 Tuhle sem ještě nezkoušel.
