@@ -1,4 +1,5 @@
 ###### Novinky:<br>
+**10.2.2021:** Konečně mám všechny součástky pro výrobu cca 20x CC2538 a 20x CC2652P. 26 kusů je už rezervováno, 10 kusů je vyrobeno. CC2538 je dvojnásobně náročnější na výrobu, kvůli stylu připojení antény a více součástkám, takže daleko radši vyrábím CC2652P.<br>
 **5.2.2021:** Tim ze na CC2538 mi stale chybi pigtaily, ale prisly mi CC2652 tak prvnim kompletne hotovym koordinatorem bude CC2652P.<br>
 **2.2.2021:** Kromě USB konektoru a U.FL pigtailu mám všechny součástky. Nechci dál čekat a objednal sem jich pár u nás za násobně vyšší ceny. Tak příští týden bych mohl rozesílat první 4 kusy.<br>
 **26.1.2021:** Přišly antény a tlačítka. Chybí pořád půlka součástek. Jakmile dorazí první 4 kusy CC2652 tak objednám chybející díly v ČR at můžu aspon ty 4 poskládat.<br>
