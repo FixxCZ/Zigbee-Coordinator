@@ -135,5 +135,5 @@ LED2 (červená) svítí pokud se využívá vestavěný zesilovač (vysílací 
 
 ### Krabičky - 3D Tisk
 ![3D](/img/Pouzdra_s.png)<br>
-CC2538 - https://www.thingiverse.com/thing:4437685 Soubory bottom_usb_ant.STL a top_ant.STL. Vyzkoušeno a pasuje pěkně.<br>
+CC2538 - https://www.thingiverse.com/thing:4437685 Soubory **bottom_usb_ant.STL** a **top_ant.STL**. Vyzkoušeno a pasuje pěkně.<br>
 CC2652P - https://www.thingiverse.com/thing:4695634 Tuhle sem ještě nezkoušel.
