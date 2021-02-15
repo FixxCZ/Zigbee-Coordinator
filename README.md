@@ -1,7 +1,9 @@
 [Aktuální novinky zde](https://github.com/FixxCZ/Zigbee-Coordinator/blob/main/novinky.md)
 
 ### Co nabízím
-Aktuálně je navýběr mezi CC2538 se zesilovacem CC2592 a mezi CC2652P, obojí jak USB tak RPi, za cenu 700Kč včetně dopravy po ČR Českou Poštou v bublinkové obálce. Na Slovensko zasílám pomocí www.zasielkovna.sk tam cena vychází na 29€.
+Aktuálně je navýběr mezi CC2538 se zesilovacem CC2592 a mezi CC2652P, obojí jak USB tak RPi, za cenu 700Kč včetně dopravy po ČR Českou Poštou v bublinkové obálce. Na Slovensko zasílám pomocí www.zasielkovna.sk tam cena vychází na 29€.<br>
+**Pro objednání mi napište na zigbee(zavináč)seznam.cz**
+
 ## Jak si vybrat
 #### RPi Shield vs. USB verze
 Wifi a Bluetooth(BT) vysílají na stejné frekvenci jako Zigbee, takže pokud používáte na vaší Raspberry Pie(RPi) jedno z toho a potřebujete Zigbee signálem pokrýt co nejvetší oblast tak volte variantu USB a připojte ji 0.5m USB prodlužovacím kabelem k RPi.<br>
