@@ -127,7 +127,10 @@ frontend:
 experimental:
   new_api: true  #tahle hodnota je aktuálně nutná jen pokud bežíte na Home Assitant. Stand alone instalace Zigbee2MQTT ji nevyžaduje.
 ``` 
-Port 8485 potřebujete pokud máte Home Assitant v Dockeru, jinak můžete použí výchozí port 8080. Samozřejmě za předpokladu, že nepoužíváte SOCAT. Rozhraní pak poběží na stejné adrese jako Home Assistant jen na portu 8485 a ne 8123. Přídání do sidebaru mě nefunguje, ale třeba se vám zadaří.
+Port 8485 potřebujete pokud máte Home Assitant v Dockeru, jinak můžete použí výchozí port 8080. Samozřejmě za předpokladu, že nepoužíváte SOCAT. Rozhraní pak poběží na stejné adrese jako Home Assistant jen na portu 8485 a ne 8123. Přídání do sidebaru mě nefunguje, ale třeba se vám zadaří.<br>
+<br>
+Pokud máte problém napárovat zařízení co vám předtím fungovalo, přesunte se co nejblíže koordinátoru a přesvedčte se, že baterie nemá méně než 20%. Zařízení se slabou baterií se odmítají párovat.<br>
+
 
 ### LED diody
 Funce LED diod je daná firmware nahraným v koordinatoru, takže pokud si tam nahrajete jiný, můžou ukazovat něco jiného.<br>
@@ -145,4 +148,7 @@ LED2 (červená) svítí pokud se využívá vestavěný zesilovač (vysílací 
 ![3D](/img/Pouzdra_s.png)<br>
 CC2538 - https://www.thingiverse.com/thing:4437685 Soubory **bottom_usb_ant.STL** a **top_ant.STL**. Vyzkoušeno a pasuje pěkně.<br>
 CC2652P - https://www.thingiverse.com/thing:4695634 Vrchní díl je trošku volný, příště ho budu tisknout zvětšený na 101% a snad to bude lepší.<br>
-<br>
+
+### Co s původním nevyužitým CC2531? Přece router!
+
+Pokud vám po upgradu zůstal nevyužitý koordinátor CC2531 a máte CC debuger, můžete do nej flashnout router firmware [CC2531-router.hex (ptvo.info)](https://ptvo.info/cc2531-based-router-firmware-136/) a pokrýt třeba oblast se slabším signálem. Pokud CC debuger nevlastníte, je několik [alternativních metod](https://www.zigbee2mqtt.io/information/alternative_flashing_methods.html) jak do něj nahrát FW.
