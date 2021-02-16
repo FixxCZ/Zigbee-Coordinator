@@ -1,7 +1,7 @@
 [Aktuální novinky zde](https://github.com/FixxCZ/Zigbee-Coordinator/blob/main/novinky.md)
 
 ### Co nabízím
-Vyrábím Zigbee koordinátory podle designu popsaného Jagerem na [modkam.ru](https://modkam.ru/) a jejich clonech od Egony. Aktuálně je na výběr mezi CC2538 se zesilovacem CC2592 a mezi CC2652P, obojí jak USB tak RPi, za cenu 700Kč včetně dopravy po ČR Českou Poštou v bublinkové obálce. Na Slovensko zasílám pomocí www.zasielkovna.sk tam cena vychází na 29€.<br>
+Na základě kladných ohlasů na [FB](https://www.facebook.com/groups/2232679967058877/permalink/2843937365933131) vyrábím Zigbee koordinátory podle designu popsaného Jagerem na [modkam.ru](https://modkam.ru/) a jejich clonech od Egony. Aktuálně je na výběr mezi CC2538 se zesilovacem CC2592 a mezi CC2652P, obojí jak USB tak RPi, za cenu 700Kč včetně dopravy po ČR Českou Poštou v bublinkové obálce. Na Slovensko zasílám pomocí www.zasielkovna.sk tam cena vychází na 29€.<br>
 **Pro objednání mi napište na zigbee(zavináč)seznam.cz**
 
 ## Jak si vybrat
@@ -144,4 +144,5 @@ LED2 (červená) svítí pokud se využívá vestavěný zesilovač (vysílací 
 ### Krabičky - 3D Tisk
 ![3D](/img/Pouzdra_s.png)<br>
 CC2538 - https://www.thingiverse.com/thing:4437685 Soubory **bottom_usb_ant.STL** a **top_ant.STL**. Vyzkoušeno a pasuje pěkně.<br>
-CC2652P - https://www.thingiverse.com/thing:4695634 Vrchní díl je trošku volný, příště ho budu tisknout zvětšený na 101% a snad to bude lepší.
+CC2652P - https://www.thingiverse.com/thing:4695634 Vrchní díl je trošku volný, příště ho budu tisknout zvětšený na 101% a snad to bude lepší.<br>
+<br>
