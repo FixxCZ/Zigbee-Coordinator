@@ -148,7 +148,7 @@ LED2 (červená) svítí pokud se využívá vestavěný zesilovač (vysílací 
 ### Krabičky - 3D Tisk
 ![3D](/img/Pouzdra_s.png)<br>
 CC2538 - https://www.thingiverse.com/thing:4437685 Soubory **bottom_usb_ant.STL** a **top_ant.STL**. Vyzkoušeno a pasuje pěkně.<br>
-CC2652P - https://www.thingiverse.com/thing:4695634 Vrchní díl je trošku volný, příště ho budu tisknout zvětšený na 101% a snad to bude lepší.<br>
+CC2652P - https://www.thingiverse.com/thing:4695634 Vrchní díl je trošku volnějsí, zkoušel sem ho zvetšit na 101% ale to už je moc velké. Takže lepší je ho tisknout original a při nejhorším zakapnout sekundakem.<br>
 
 ### Co s původním nevyužitým CC2531? Přece router!
 
