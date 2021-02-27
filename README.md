@@ -120,6 +120,7 @@ advanced:
 experimental:
   transmit_power: 20  #toto funguje jen pro CC2652P kde je možné výkon řídit. 20 je maximum, dostupné hodnoty jsou -20, -18, -15, -12, -10, -9, -6, -5, -3, 0, 1..5, 14..20
 ```
+Pokud používáte pan_id musíte nastavit hodnotu i jedna vyšší než máte nyní. Takže pokud máte pan_id: 6752 tak dáte pan_id: 6753.<br>
 Na desce je přítomný UART převodník CH340, aby bylo možné nahrávat nový FW bez nutnosti dalšího HW (J-Link), z toho důvodu se koordinátor nehlásí jako třeba usb-Texas_Instruments_TI_CC2538_USB, ale jako usb-1a86_USB_Serial-if00-port0.<br>
 Doporučuju si zapnout i nový Zigbee2MQTT frontend:
 ```
