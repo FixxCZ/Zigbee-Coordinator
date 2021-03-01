@@ -108,7 +108,7 @@ Výsledek by měl vypadat nějak takhle:
 pi@raspberrypi:~ $ ls -l /dev/serial/by-id/
 lrwxrwxrwx 1 root root 13 Feb  7 18:45 usb-1a86_USB_Serial-if00-port0 -> ../../ttyUSB0
 ```
-Do configurace tedy napíšeme tohle:
+Do configurace doplňku Zigbee2MQTT tedy napíšeme tohle:
 ```
 serial:
   port: /dev/serial/by-id/usb-1a86_USB_Serial-if00-port0
