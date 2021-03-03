@@ -79,7 +79,7 @@ v konfiguraci zigbee2mqtt upravte port na
 
 
 ==============================
-Flashovani
+Flashovani (vas stick prisel naflashovany, takze tahle cast neni povinna)
 ==============================
 Pro CC2538:
 Stahnete si UART firmware zde https://github.com/jethome-ru/zigbee-firmware/tree/master/ti/coordinator/cc2538_cc2592
