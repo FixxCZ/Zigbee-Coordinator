@@ -1,4 +1,5 @@
 ###### Novinky:<br>
+**3.3.2021:** Vsechno ceka na dodavky dilu z ciny. Takze aktualne je cekaci doba 3-4 tydny.<br>
 **16.2.2021:** Včera sem začas s výrobou RPi verzí, ale zatím se mi je nepodařilo flashout přes RPi. První nahrání FW se asi bude muset delat mimo RPi přes externí UART.<br>
 **10.2.2021:** Konečně mám všechny součástky pro výrobu cca 20x CC2538 a 20x CC2652P. 26 kusů je už rezervováno, 10 kusů je vyrobeno. CC2538 je dvojnásobně náročnější na výrobu, kvůli stylu připojení antény a více součástkám, takže daleko radši vyrábím CC2652P.<br>
 **5.2.2021:** Tim ze na CC2538 mi stale chybi pigtaily, ale prisly mi CC2652 tak prvnim kompletne hotovym koordinatorem bude CC2652P.<br>
