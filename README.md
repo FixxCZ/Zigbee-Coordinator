@@ -101,6 +101,7 @@ Co se týče vysílacího a přijímacího výkonu, tak příjem je stejný, ale
 
 
 ## Jak si nastavit nový koordinátor v Zigbee2MQTT
+Pro nastavení RPI verze [začněte tady](https://github.com/FixxCZ/Zigbee-Coordinator/blob/main/readme_pi_shield.txt) s USB verzí můžete číst dál.<br>
 K vaší už existující konfiguraci je nutné přidat několik parametrů.<br>
 Změna nastavení portu - buď přímo na RPi můžete spustit příkaz **ls -l /dev/serial/by-id/** nebo v Home Assistant v menu Supervisor > System > v okýnku Host jsou tři tečky a tam je Hardware.<br>
 Výsledek by měl vypadat nějak takhle:
