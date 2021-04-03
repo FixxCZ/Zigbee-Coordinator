@@ -1,4 +1,5 @@
 ###### Novinky:<br>
+**4.3.2021:** Porad pocet dilu zaostava za poptavkou. Ale tak za tri tydny by melo byt vseho dost a mel bych byl schopny vyrobet do zasoby, takze bez cekani.<br>
 **3.3.2021:** Vsechno ceka na dodavky dilu z ciny. Takze aktualne je cekaci doba 3-4 tydny.<br>
 **16.2.2021:** Včera sem začas s výrobou RPi verzí, ale zatím se mi je nepodařilo flashout přes RPi. První nahrání FW se asi bude muset delat mimo RPi přes externí UART.<br>
 **10.2.2021:** Konečně mám všechny součástky pro výrobu cca 20x CC2538 a 20x CC2652P. 26 kusů je už rezervováno, 10 kusů je vyrobeno. CC2538 je dvojnásobně náročnější na výrobu, kvůli stylu připojení antény a více součástkám, takže daleko radši vyrábím CC2652P.<br>
