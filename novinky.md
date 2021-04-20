@@ -1,4 +1,5 @@
 ###### Novinky:<br>
+**20.4.2021:** Tak vsichni zajemci dostaly sve koordinatory, takze uz neni zadna cekaci doba a muzu posilat obratem.<br>
 **4.3.2021:** Porad pocet dilu zaostava za poptavkou. Ale tak za tri tydny by melo byt vseho dost a mel bych byl schopny vyrobet do zasoby, takze bez cekani.<br>
 **3.3.2021:** Vsechno ceka na dodavky dilu z ciny. Takze aktualne je cekaci doba 3-4 tydny.<br>
 **16.2.2021:** Včera sem začas s výrobou RPi verzí, ale zatím se mi je nepodařilo flashout přes RPi. První nahrání FW se asi bude muset delat mimo RPi přes externí UART.<br>
