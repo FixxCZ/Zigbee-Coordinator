@@ -122,7 +122,8 @@ advanced:
 experimental:
   transmit_power: 20  #toto funguje jen pro CC2652P kde je možné výkon řídit. 20 je maximum, dostupné hodnoty jsou -20, -18, -15, -12, -10, -9, -6, -5, -3, 0, 1..5, 14..20
 ```
-Na desce je přítomný UART převodník CH340, aby bylo možné nahrávat nový FW bez nutnosti dalšího HW (J-Link), z toho důvodu se koordinátor nehlásí jako třeba usb-Texas_Instruments_TI_CC2538_USB, ale jako usb-1a86_USB_Serial-if00-port0.<br>
+Na desce je přítomný UART převodník CH340, aby bylo možné nahrávat nový FW bez nutnosti dalšího HW (J-Link), z toho důvodu se koordinátor nehlásí jako třeba usb-Texas_Instruments_TI_CC2538_USB, ale jako usb-1a86_USB_Serial-if00-port0.<br><br>
+**Nově není nutné přepárovat všechna zařízení při přechodu třeba z CC2531, objevil se nový nástroj od zigpy na migraci mezi Texas instruments čipy. Zkoušel sem ho a můžu potvrdit že funguje. Stačí pomocí Network backup (beta) stáhnout data z CC2531 a nahrát je do CC2538/CC2652. Postup je zde https://github.com/zigpy/zigpy-znp/blob/dev/TOOLS.md#network-backup-beta**<br><br>
 Doporučuju si zapnout i nový Zigbee2MQTT frontend:
 ```
 frontend:
