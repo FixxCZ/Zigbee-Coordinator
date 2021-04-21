@@ -102,7 +102,7 @@ Co se týče vysílacího a přijímacího výkonu, tak příjem je stejný, ale
 
 
 ## Jak si nastavit nový koordinátor v Zigbee2MQTT
-Pokud přecházíte z jiného koordinátoru s čipem Texas Instruments, jako je třeba CC2531, tak je nově možné zmigrovat celé nastaceni sítě a vyhnout se nutnosti párování všech zařízení, více na https://github.com/FixxCZ/Zigbee-Coordinator/blob/main/Migrace.md <br>
+Pokud přecházíte z jiného koordinátoru s čipem Texas Instruments, jako je třeba CC2531, tak je nově možné zmigrovat celé nastaceni sítě a vyhnout se nutnosti párování všech zařízení, více na https://github.com/FixxCZ/Zigbee-Coordinator/blob/main/Migrace.md <br><br>
 Pro nastavení RPI verze [začněte tady](https://github.com/FixxCZ/Zigbee-Coordinator/blob/main/readme_pi_shield.txt) s USB verzí můžete číst dál.<br>
 K vaší už existující konfiguraci je nutné přidat několik parametrů.<br>
 Změna nastavení portu - buď přímo na RPi můžete spustit příkaz **ls -l /dev/serial/by-id/** nebo v Home Assistant v menu Supervisor > System > v okýnku Host jsou tři tečky a tam je Hardware.<br>
