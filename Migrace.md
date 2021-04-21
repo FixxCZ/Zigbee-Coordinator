@@ -24,7 +24,7 @@ Je potreba nainstalovat DEV branch projektu, protoze network backup je porad v B
 ```
 pip install https://github.com/zigpy/zigpy-znp/archive/dev.tar.gz
 ```
-Pokud narazite jako ja na chybu **Command "python setup.py egg_info" failed with error code 1 in ...** tak si aktualizujte PIP<br>
+Pokud narazite jako ja na chybu **Command "python setup.py egg_info" failed with error code 1 in ...** tak si aktualizujte PIP a zkuste to znovu.<br>
 *python -m pip install --upgrade pip*
 
 ## Backup and restore
