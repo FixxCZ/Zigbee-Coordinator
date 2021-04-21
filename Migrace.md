@@ -15,9 +15,9 @@ Pokud jeste nepouzivate [Windows Terminal](https://www.microsoft.com/en-us/p/win
 ### Vytvoreni virtualniho prostredi
 Vytvorte a aktivujte virtualni prostredi.
 ```console
-> py -3 -m venv venv
-> venv\Scripts\activate.ps1  # for PowerShell
-> venv\Scripts\activate.bat  # for cmd.exe
+py -3 -m venv venv
+venv\Scripts\activate.ps1  # for PowerShell
+venv\Scripts\activate.bat  # for cmd.exe
 ```
 ### Instalace zigpy-znp
 Je potreba nainstalovat DEV branch projektu, protoze network backup je porad v BETA verzi.
