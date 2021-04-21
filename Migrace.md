@@ -12,16 +12,30 @@ Cislo COM portu si poznamenejte.
 
 Pokud jeste nepouzivate [Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab) tak muzete pouzit PowerShell nebo prikazovou radku (cmd.exe).
 
-The Windows `py` launcher will be used in place of `python` in all subsequent commands
-so instead of running this:
-
+### Vytvoreni virtualniho prostredi
+Vytvorte a aktivujte virtualni prostredi.
 ```console
-> python -m zigpy_znp.tools.foo
+> py -3 -m venv venv
+> venv\Scripts\activate.ps1  # for PowerShell
+> venv\Scripts\activate.bat  # for cmd.exe
 ```
+### Instalace zigpy-znp
+Je potreba nainstalovat DEV branch projektu, protoze network backup je porad v BETA verzi.
+```
+pip install https://github.com/zigpy/zigpy-znp/archive/dev.tar.gz
+```
+Pokud narazite jako ja na chybu **Command "python setup.py egg_info" failed with error code 1 in ...** tak si aktualizujte PIP<br>
+*python -m pip install --upgrade pip*
 
-
-Run this:
-
+## Backup and restore
+Prvni do PC pripojte puvodni stick treba CC2531, v device manageru si zjistete cislo COM portu. Pokud si nejste jisty ktery to je, tak ho odpojte a znovu pripojte, pritom sledujte ktera polozka zmizi a zase se objevi.<br>
+V mem pripade to je COM21, takze zadam prikaz:
 ```console
-> py -3 -m zigpy_znp.tools.foo
+python -m zigpy_znp.tools.network_backup COM21 -o network_backup.json
+```
+Vytvori se soubor network_backup.json kde je zaloha cele site v plain textu.<br>
+<br>
+Pak pripojime novy stick treba CC2652 a zjistime si COM port, v mem pripade trea COM8. Takze spustim:
+```console
+python -m zigpy_znp.tools.network_restore COM8 -i network_backup.json
 ```
