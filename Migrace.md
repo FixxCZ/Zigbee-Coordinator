@@ -4,7 +4,7 @@ Navod sem prevzal z https://github.com/zigpy/zigpy-znp/blob/dev/TOOLS.md a tim j
 ### Windows 10
 Stahnete si posledni verzi Python 3 https://www.python.org/downloads/
 
-Pokud se vam muj dongle nezobrazuje ve spravci zarizeni (Device manager), budete muset doinstalovat driver https://learn.sparkfun.com/tutorials/how-to-install-ch340-drivers/all#windows-710
+Pokud se vam muj dongle nezobrazuje ve spravci zarizeni (Device manager), budete muset doinstalovat driver https://learn.sparkfun.com/tutorials/how-to-install-ch340-drivers/all#windows-710 <br><br>
 Po pripojeni by se mel jmenovat takhle<br>
 ![image](https://user-images.githubusercontent.com/46757804/115614716-4f393f00-a2ee-11eb-81b0-cf51ebec7d00.png)
 Cislo COM portu si poznamenejte.
