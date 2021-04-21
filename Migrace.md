@@ -39,3 +39,5 @@ Pak pripojime novy stick treba CC2652 a zjistime si COM port, v mem pripade trea
 ```console
 python -m zigpy_znp.tools.network_restore COM8 -i network_backup.json
 ```
+Mame hotovo.<br>
+Tento postup lze pouzit i na backup pred upgradem Firmware zgbee sticku.
