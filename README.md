@@ -155,6 +155,9 @@ LED2 (červená) svítí pokud se využívá vestavěný zesilovač (vysílací 
 CC2538 - https://www.thingiverse.com/thing:4437685 Soubory **bottom_usb_ant.STL** a **top_ant.STL**. Vyzkoušeno a pasuje pěkně.<br>
 CC2652P - https://www.thingiverse.com/thing:4695634 Vrchní díl je někdy trošku volnějsí, osvedčilo se mi ho zvetšit na délku ve sliceru na 100.64% takže na rovných 47 mm.<br>
 
+### Flashovani firmware CC2652P a CC2538
+Dongly jsou vybaveny UART prevodnikem, takze na jejich flashovani neni potreba zadny dalsi hardware. Postup je popsan zde: https://github.com/FixxCZ/Zigbee-Coordinator/blob/main/Firmware.md
+
 ### Co s původním nevyužitým CC2531? Přece router!
 
 Pokud vám po upgradu zůstal nevyužitý koordinátor CC2531 a máte CC debuger, můžete do nej flashnout router firmware [CC2531-router.hex (ptvo.info)](https://ptvo.info/cc2531-based-router-firmware-136/) a pokrýt třeba oblast se slabším signálem. Pokud CC debuger nevlastníte, je několik [alternativních metod](https://www.zigbee2mqtt.io/information/alternative_flashing_methods.html) jak do něj nahrát FW.
