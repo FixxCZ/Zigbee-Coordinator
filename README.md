@@ -3,7 +3,7 @@
 #### Update: 27.5.2021 - Mam dily na 5 kusu, takze cekacka tak 2 dny na vyrobu. Dalsi kusy budou pocitam tak za 2 tydny az prijde dalsi varka dilu. 
 ### Co nabízím
 Na základě kladných ohlasů na [FB](https://www.facebook.com/groups/2232679967058877/permalink/2843937365933131) vyrábím Zigbee koordinátory podle designu popsaného Jagerem na [modkam.ru](https://modkam.ru/) a jejich clonech od Egony. Aktuálně je na výběr mezi CC2538 se zesilovacem CC2592 a mezi CC2652P, obojí jak USB tak RPi, za cenu 700Kč včetně dopravy po ČR Českou Poštou v bublinkové obálce. Na Slovensko zasílám pomocí www.zasielkovna.sk tam celková cena vychází na 30€. Můžu přidat i vytištěnou krabičku za 20Kč.<br>
-Všechny modely mají externí anténu a jsou flashnuté pro práci se Zigbee2MQTT, na přání můžu flashnout i router firmware.<br>
+Ke všem modelům dávám externí anténu a jsou flashnuté pro práci se Zigbee2MQTT, na přání můžu flashnout i router firmware.<br>
 **Pro objednání mi napište na zigbee(zavináč)seznam.cz**<br>
 ![Varianty](/img/varianty.png)<br>
 *Všechny varianty, pořadí tak jak na fotce: CC2652P USB, CC2652P RPI shield, CC2538 RPI shield, CC2538 USB*
