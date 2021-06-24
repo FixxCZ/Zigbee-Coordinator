@@ -115,7 +115,7 @@ lrwxrwxrwx 1 root root 13 Feb  7 18:45 usb-1a86_USB_Serial-if00-port0 -> ../../t
 Do configurace doplňku Zigbee2MQTT tedy napíšeme tohle:
 ```
 serial:
-  port: /dev/serial/by-id/usb-1a86_USB_Serial-if00-port0
+  port: /dev/serial/by-id/usb-1a86_USB_Serial-if00-port0  #na RPI4 taky nekdy /dev/serial/by-id/usb-1a86_USB2.0-Serial-if00-port0
 
 advanced:
   baudrate: 115200  #tahle položka je nutná protože používáme UART převodník viz. níže
