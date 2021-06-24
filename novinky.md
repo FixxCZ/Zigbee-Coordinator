@@ -1,4 +1,5 @@
 ###### Novinky:<br>
+**24.6.2021:** Tim ze mam dilu dost, tak uz novinky nebudu updatovat. Pocitam s vyrobou dalsich max 60 kusu a pak asi vyrobu ukoncim.<br>
 **14.5.2021:** Zacinaji mi dochazet zasoby CC2652, jsou objednane nove, snad prijdou nez se 1.7. zavedou novinky ohledne CLA a DPH pro zasilky z Ciny. Posledni 4 kusy vyrobim a pak zase cekacka par tydnu.<br>
 **20.4.2021:** Tak vsichni zajemci dostaly sve koordinatory, takze uz neni zadna cekaci doba a muzu posilat obratem.<br>
 **4.3.2021:** Porad pocet dilu zaostava za poptavkou. Ale tak za tri tydny by melo byt vseho dost a mel bych byl schopny vyrobet do zasoby, takze bez cekani.<br>
