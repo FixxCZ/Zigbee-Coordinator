@@ -1,4 +1,5 @@
 #### Update: 14.9.2021 - Dily jsou dostupne, muzu dodavat do par dni.  
+#### Pozor: HA OS verze 6.3 obsahuje Kernel ktery ma vadny CH340/341 driver, takze zigbee stick prestane fungovat. Tyka se to i nekterych verzi Raspbianu. Resenim je updatovat na novou verzi OS. [Vice info zde.](https://github.com/Koenkk/zigbee2mqtt/issues/8663) 
 ### Co nabízím
 Na základě kladných ohlasů na [FB](https://www.facebook.com/groups/2232679967058877/permalink/2843937365933131) vyrábím Zigbee koordinátory podle designu popsaného Jagerem na [modkam.ru](https://modkam.ru/) a jejich clonech od Egony. Aktuálně je na výběr mezi CC2538 se zesilovacem CC2592 a mezi CC2652P, obojí jak USB tak RPi, za cenu 700Kč včetně dopravy po ČR Českou Poštou v bublinkové obálce, případně možnost vyzvednutí v Brně. Na Slovensko zasílám pomocí www.zasielkovna.sk tam celková cena vychází na 30€. Můžu přidat i vytištěnou krabičku za 20Kč.<br>
 Ke všem modelům dávám externí anténu a jsou flashnuté pro práci se Zigbee2MQTT, na přání můžu flashnout i router firmware.<br>
