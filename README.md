@@ -1,7 +1,7 @@
 #### Update: 14.9.2021 - Dily jsou dostupne, muzu dodavat do par dni.  
 #### Pozor: HA OS verze 6.3 obsahuje Kernel ktery ma vadny CH340/341 driver, takze zigbee stick prestane fungovat. Tyka se to i nekterych verzi Raspbianu. Resenim je updatovat na novou verzi OS. [Vice info zde.](https://github.com/Koenkk/zigbee2mqtt/issues/8663) 
 ### Co nabízím
-Na základě kladných ohlasů na [FB](https://www.facebook.com/groups/2232679967058877/permalink/2843937365933131) vyrábím Zigbee koordinátory podle designu popsaného Jagerem na [modkam.ru](https://modkam.ru/) a jejich clonech od Egony. Aktuálně je na výběr mezi CC2538 se zesilovacem CC2592 a mezi CC2652P, obojí jak USB tak RPi, za cenu 700Kč včetně dopravy po ČR Českou Poštou v bublinkové obálce, případně možnost vyzvednutí v Brně. Na Slovensko zasílám pomocí www.zasielkovna.sk tam celková cena vychází na 30€. Můžu přidat i vytištěnou krabičku za 20Kč.<br>
+Na základě kladných ohlasů na [FB](https://www.facebook.com/groups/2232679967058877/permalink/2843937365933131) vyrábím Zigbee koordinátory podle designu popsaného Jagerem na [modkam.ru](https://modkam.ru/) a jejich clonech od Egony. Aktuálně nabízím koordinátor založený na CC2652P, jak USB tak RPi, za cenu 700Kč včetně dopravy po ČR Českou Poštou v bublinkové obálce, případně možnost vyzvednutí v Brně. Na Slovensko zasílám pomocí www.zasielkovna.sk tam celková cena vychází na 30€. Můžu přidat i vytištěnou krabičku za 20Kč.<br>
 Ke všem modelům dávám externí anténu a jsou flashnuté pro práci se Zigbee2MQTT, na přání můžu flashnout i router firmware.<br>
 **Pro objednání mi napište na zigbee(zavináč)seznam.cz**<br>
 ![Varianty](/img/varianty.png)<br>
@@ -96,11 +96,6 @@ Uživatelé RPi 4 si musí dát pozor na to jestli nepoužívají USB 3.0 zaří
 **Routes:** Počet cest "routes" které může koordinátor držet v paměti. Například 100/200 znamená, že koordinátor zvládne 100 normálních a 200 source routes. Source routes zlepšují celkovou odezvu a výkon větších sítí s 40+ zařízeními.<br>
 *Zdroj: [https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator](https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator "https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator")*
 
-**Je lepší CC2538+CC2592 nebo CC2652P?**<br>
-CC2652P vede na poli výpočetního výkonu, CPU má 48MHz a disponuje 80KB+8KB SRAM, CC2538 má 32MHz a 32KB SRAM. Pro porovnání CC2531 ma takt CPU 12MHz a 8KB SRAM.<br>
-Co se týče vysílacího a přijímacího výkonu, tak příjem je stejný, ale vysílací výkon má CC2538 díky zesilovači CC2592 o pár decibel lepší, CC2652P má zase plíškem odstíněný čip už těsne za anténou a i konektor antény je pájená napřímo.<br>
-
-
 ## Jak si nastavit nový koordinátor v Zigbee2MQTT
 Pokud přecházíte z jiného koordinátoru s čipem Texas Instruments, jako je třeba CC2531, tak je nově možné zmigrovat celé nastaceni sítě a vyhnout se nutnosti párování všech zařízení, více na https://github.com/FixxCZ/Zigbee-Coordinator/blob/main/Migrace.md <br><br>
 Pro nastavení RPI verze [začněte tady](https://github.com/FixxCZ/Zigbee-Coordinator/blob/main/readme_pi_shield.txt) s USB verzí můžete číst dál.<br>
@@ -125,7 +120,7 @@ experimental:
   transmit_power: 20  #toto funguje jen pro CC2652P kde je možné výkon řídit. 20 je maximum, dostupné hodnoty jsou -20, -18, -15, -12, -10, -9, -6, -5, -3, 0, 1..5, 14..20
 ```
 Na desce je přítomný UART převodník CH340, aby bylo možné nahrávat nový FW bez nutnosti dalšího HW (J-Link), z toho důvodu se koordinátor nehlásí jako třeba usb-Texas_Instruments_TI_CC2538_USB, ale jako usb-1a86_USB_Serial-if00-port0.<br><br>
-**Nově není nutné přepárovat všechna zařízení při přechodu třeba z CC2531, objevil se nový nástroj od zigpy na migraci mezi Texas instruments čipy. Zkoušel sem ho a můžu potvrdit že funguje. Stačí pomocí Network backup (beta) stáhnout data z CC2531 a nahrát je do CC2538/CC2652. Postup je zde https://github.com/zigpy/zigpy-znp/blob/dev/TOOLS.md#network-backup-beta**<br><br>
+**Nově není nutné přepárovat všechna zařízení při přechodu třeba z CC2531, objevil se nový nástroj od zigpy na migraci mezi Texas instruments čipy. Zkoušel sem ho a můžu potvrdit že funguje. Stačí pomocí Network backup (beta) stáhnout data z CC2531 a nahrát je do CC2538/CC2652P. Postup je zde https://github.com/zigpy/zigpy-znp/blob/dev/TOOLS.md#network-backup-beta**<br><br>
 Doporučuju si zapnout i nový Zigbee2MQTT frontend:
 ```
 frontend:
@@ -140,19 +135,12 @@ Pokud máte problém napárovat zařízení co vám předtím fungovalo, přesun
 
 ### LED diody
 Funce LED diod je daná firmware nahraným v koordinatoru, takže pokud si tam nahrajete jiný, můžou ukazovat něco jiného.<br>
-**CC2538** <br>
-LED1 (zelená) Power LED.<br>
-LED2 (žlutá) Zatím nevyužitá.<br>
-LED3 (modrá) Bliká když je povoleno párování nových zařízení (permit_join: true).<br>
-LED4 (červená) Problikává když probíha datový přenos.<br>
-<br>
 **CC2652P** <br>
 LED1 (zelená) svítí pokud se nepoužívá vestavěný zesilovač (vysílací výkon je mezi -20 až 5 dBm)<br>
 LED2 (červená) svítí pokud se využívá vestavěný zesilovač (vysílací výkon je mezi 15 až 20 dBm)<br>
 
 ### Krabičky - 3D Tisk
 ![3D](/img/3D_pouzdra.png)<br>
-CC2538 - https://www.thingiverse.com/thing:4437685 Soubory **bottom_usb_ant.STL** a **top_ant.STL**. Vyzkoušeno a pasuje pěkně.<br>
 CC2652P - https://www.thingiverse.com/thing:4695634 Vrchní díl je někdy trošku volnějsí, osvedčilo se mi ho zvetšit na délku ve sliceru na 100.64% takže na rovných 47 mm.<br>
 
 ### Flashovani firmware CC2652P a CC2538
