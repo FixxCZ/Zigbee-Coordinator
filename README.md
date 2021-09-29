@@ -5,7 +5,7 @@ Na základě kladných ohlasů na [FB](https://www.facebook.com/groups/223267996
 Ke všem modelům dávám externí anténu a jsou flashnuté pro práci se Zigbee2MQTT, na přání můžu flashnout i router firmware.<br>
 **Pro objednání mi napište na zigbee(zavináč)seznam.cz**<br>
 ![Varianty](/img/varianty.png)<br>
-*Všechny varianty, pořadí tak jak na fotce: CC2652P USB, CC2652P RPI shield, CC2538 RPI shield, CC2538 USB*
+*Všechny varianty, pořadí tak jak na fotce: CC2652P USB, CC2652P RPI shield
 ## Jak si vybrat
 #### RPi Shield vs. USB verze
 Wifi a Bluetooth(BT) vysílají na stejné frekvenci jako Zigbee, takže pokud používáte na vaší Raspberry Pie(RPi) jedno z toho a potřebujete Zigbee signálem pokrýt co nejvetší oblast tak volte variantu USB a připojte ji 0.5m USB prodlužovacím kabelem k RPi.<br>
@@ -143,7 +143,7 @@ LED2 (červená) svítí pokud se využívá vestavěný zesilovač (vysílací 
 ![3D](/img/3D_pouzdra.png)<br>
 CC2652P - https://www.thingiverse.com/thing:4695634 Vrchní díl je někdy trošku volnějsí, osvedčilo se mi ho zvetšit na délku ve sliceru na 100.64% takže na rovných 47 mm.<br>
 
-### Flashovani firmware CC2652P a CC2538
+### Flashovani firmware
 Dongly jsou vybaveny UART prevodnikem, takze na jejich flashovani neni potreba zadny dalsi hardware. Postup je popsan zde: https://github.com/FixxCZ/Zigbee-Coordinator/blob/main/Firmware.md
 
 ### Co s původním nevyužitým CC2531? Přece router!
