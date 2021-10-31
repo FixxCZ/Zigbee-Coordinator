@@ -1,4 +1,4 @@
-#### Update: 13.10.2021 - Dily jsou dostupne, muzu dodavat do par dni. Krabicky mam modre a sede.
+#### Update: 31.10.2021 - Dily jsou dostupne, muzu dodavat do par dni. Krabicky mam modre a sede.
 #### Pozor: HA OS verze 6.3 obsahuje Kernel ktery ma vadny CH340/341 driver, takze zigbee stick prestane fungovat. Tyka se to i nekterych verzi Raspbianu. Resenim je updatovat na novou verzi OS. [Vice info zde.](https://github.com/Koenkk/zigbee2mqtt/issues/8663) 
 ### Co nabízím
 Na základě kladných ohlasů na [FB](https://www.facebook.com/groups/2232679967058877/permalink/2843937365933131) vyrábím Zigbee koordinátory podle designu popsaného Jagerem na [modkam.ru](https://modkam.ru/) a jejich clonech od Egony. Aktuálně nabízím koordinátor založený na CC2652P, jak USB tak RPi, za cenu 700Kč včetně dopravy po ČR Českou Poštou v bublinkové obálce, případně možnost vyzvednutí v Brně. Na Slovensko zasílám pomocí www.zasielkovna.sk tam celková cena vychází na 30€. Můžu přidat i vytištěnou krabičku za 20Kč.<br>
@@ -97,7 +97,7 @@ Uživatelé RPi 4 si musí dát pozor na to jestli nepoužívají USB 3.0 zaří
 *Zdroj: [https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator](https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator "https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator")*
 
 ## Jak si nastavit nový koordinátor v Zigbee2MQTT
-Pokud přecházíte z jiného koordinátoru s čipem Texas Instruments, jako je třeba CC2531, tak je nově možné zmigrovat celé nastaceni sítě a vyhnout se nutnosti párování všech zařízení, více na https://github.com/FixxCZ/Zigbee-Coordinator/blob/main/Migrace.md <br><br>
+Pokud přecházíte z jiného koordinátoru s čipem Texas Instruments, jako je třeba CC2531, tak od verze zigbee2mqtt 1.21.0 by měla migrace proběhnout sama viz. https://www.zigbee2mqtt.io/information/FAQ.html#how-do-i-migrate-from-a-cc2531-to-a-more-powerful-coordinator-eg-zzh nicméně aktuálne (31.10.2021) HA nabízí pořád verzi 1.18.1-1 jako poslední možnou. Kazdopádně je možné zkusit zmigrovat celé nastavení sítě viz. https://github.com/FixxCZ/Zigbee-Coordinator/blob/main/Migrace.md <br><br>
 Pro nastavení RPI verze [začněte tady](https://github.com/FixxCZ/Zigbee-Coordinator/blob/main/readme_pi_shield.txt) s USB verzí můžete číst dál.<br>
 K vaší už existující konfiguraci je nutné přidat několik parametrů.<br>
 Změna nastavení portu - buď přímo na RPi můžete spustit příkaz **ls -l /dev/serial/by-id/** nebo v Home Assistant v menu Supervisor > System > v okýnku Host jsou tři tečky a tam je Hardware.<br>
