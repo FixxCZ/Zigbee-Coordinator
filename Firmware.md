@@ -1,7 +1,10 @@
 # Flashovani firmware CC2652P a CC2538
 Pro nahrani nejnovejiho FW doprucuju oficialni TI nastroj SmartRF Flash Programmer 2, po registraci zdarma na stazeni zde https://www.ti.com/tool/FLASH-PROGRAMMER <br><br>
-Koordinator FW pro CC2652P je zde:<br>
+Koordinator FW pro muj CC2652P je zde (aktualne je stabilni verze 20210319):<br>
 https://github.com/egony/cc2652p_E72-2G4M20S1E/tree/master/firmware/coordinator <br>
+Ma podporu LED a je to overeny stabilni FW.<br><br>
+Je mozne pouzit i FW od Koenkk, je funkcni jen na nem nesviti diody, pouze cervena kdyz je v rezimu parovani. Muj stick je design **Egony Stick V4 (Ebyte ver.)** takze soubor CC1352P2_CC2652P_other_*.zip (Napr. CC1352P2_CC2652P_other_coordinator_20210708.zip)<br>
+https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator/Z-Stack_3.x.0/bin
 
 Router FW pro CC2652P neni custom a pouziva se standardni od Koenkk, tim padem neni zesilovac aktivni. Na router je lepsi pouzit CC2538.<br>
 https://github.com/Koenkk/Z-Stack-firmware/tree/master/router/Z-Stack_3.x.0/bin<br>
