@@ -1,5 +1,5 @@
 # Flashovani firmware CC2652P a CC2538
-Pro nahrani nejnovejiho FW doprucuju oficialni TI nastroj SmartRF Flash Programmer 2, po registraci zdarma na stazeni zde https://www.ti.com/tool/FLASH-PROGRAMMER <br><br>
+Pro nahrani nejnovejiho FW doprucuju oficialni TI nastroj SmartRF Flash Programmer 2, po registraci zdarma na stazeni zde https://www.ti.com/tool/FLASH-PROGRAMMER  nebo muj mirror https://webshare.cz/#/file/CABRiHRXsC<br><br>
 Koordinator FW pro muj CC2652P je zde (aktualne je stabilni verze 20210319):<br>
 https://github.com/egony/cc2652p_E72-2G4M20S1E/tree/master/firmware/coordinator <br>
 Ma podporu LED a je to overeny stabilni FW.<br><br>
