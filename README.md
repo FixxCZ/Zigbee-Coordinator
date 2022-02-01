@@ -5,12 +5,12 @@ Na základě kladných ohlasů na [FB](https://www.facebook.com/groups/223267996
 Ke všem modelům dávám externí anténu a jsou flashnuté pro práci se Zigbee2MQTT, na přání můžu flashnout i router firmware.<br>
 **Pro objednání mi napište na zigbee(zavináč)seznam.cz**<br>
 ![Varianty](/img/varianty.png)<br>
-*Všechny varianty, pořadí tak jak na fotce: CC2652P USB, CC2652P RPI shield
+*CC2652P USB, CC2652P RPI shield
 ## Jak si vybrat
 #### RPi Shield vs. USB verze
 Wifi a Bluetooth(BT) vysílají na stejné frekvenci jako Zigbee, takže pokud používáte na vaší Raspberry Pie(RPi) jedno z toho a potřebujete Zigbee signálem pokrýt co nejvetší oblast tak volte variantu USB a připojte ji 0.5m USB prodlužovacím kabelem k RPi.<br>
 Pokud máte RPi připojenou LAN kabelem a BT ani Wifi nepoužíváte, vypněte je v nastavení a s klidem zvolte variantu RPi shieldu, budete mít vše v jedné krabičce. <br>
-Uživatelé RPi 4 si musí dát pozor na to jestli nepoužívají USB 3.0 zařízení (typicky disk) pripojený do USB 3.0 portu (modré porty)<br>
+Uživatelé RPi 4 si musí dát pozor na to jestli nepoužívají USB 3.0 zařízení (typicky disk) pripojený do USB 3.0 portu (modré porty). Takový disk pak pracuje jako dokonalá rušička signalu v pásmu 2,4GHz. Řešením je opět USB prodlužka a umístění koordinátoru dále od disku.<br>
 ![USB3](/img/usb3-blue.jpg)
 ![USB3](/img/USB3.png)
 
