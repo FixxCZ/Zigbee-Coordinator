@@ -1,9 +1,10 @@
-Update: 23.1.2022 - Koordinator mam dostupny. Mohu obratem posilat.
-#### Pozor: HA OS verze 6.3 obsahuje Kernel ktery ma vadny CH340/341 driver, takze zigbee stick prestane fungovat. Tyka se to i nekterych verzi Raspbianu. Resenim je updatovat na novou verzi OS. [Vice info zde.](https://github.com/Koenkk/zigbee2mqtt/issues/8663) 
-### Co nabízím
+#### Update: 10.7.2022 - Ve vyrobe koordinatora uz nepokracuju. Na trhu je dostupny SONOFF ZIGBEE 3.0 USB DONGLE PLUS ktery ma stejny chip a vykon. Nicmene mi zbylo dost dilu a plosnych spoju, takze pokud ma nekdo zajem o dodani jako stavebnici s tim, ze si objednat hlavni chip sam, tak me muze kontaktovat zigbee(zavináč)seznam.cz.
+Pozor: HA OS verze 6.3 obsahuje Kernel ktery ma vadny CH340/341 driver, takze zigbee stick prestane fungovat. Tyka se to i nekterych verzi Raspbianu. Resenim je updatovat na novou verzi OS. [Vice info zde.](https://github.com/Koenkk/zigbee2mqtt/issues/8663) 
+<br>
+~~Co nabízím
 Na základě kladných ohlasů na [FB](https://www.facebook.com/groups/2232679967058877/permalink/2843937365933131) vyrábím Zigbee koordinátory podle designu popsaného Jagerem na [modkam.ru](https://modkam.ru/) a jejich clonech od Egony. Aktuálně nabízím koordinátor založený na CC2652P, jak USB tak RPi, za cenu 740Kč včetně dopravy po ČR Zásilkovnou,  nebo za 680Kč Českou Poštou  v bublinkové obálce, případně možnost vyzvednutí v Brně. Na Slovensko zasílám pomocí www.zasielkovna.sk tam celková cena vychází na 30€. Tištěná krabička je součástí.<br>
 Ke všem modelům dávám externí anténu a jsou flashnuté pro práci se Zigbee2MQTT, na přání můžu flashnout i router firmware.<br>
-**Pro objednání mi napište na zigbee(zavináč)seznam.cz**<br>
+**Pro objednání mi napište na zigbee(zavináč)seznam.cz**<br>~~
 ![Varianty](/img/varianty.png)<br>
 *CC2652P USB, CC2652P RPI shield
 ## Jak si vybrat
