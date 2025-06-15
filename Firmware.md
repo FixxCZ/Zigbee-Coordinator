@@ -6,8 +6,8 @@ Ma podporu LED a je to overeny stabilni FW.<br><br>
 Je mozne pouzit i FW od Koenkk, je funkcni jen na nem nesviti diody, pouze cervena kdyz je v rezimu parovani. Muj stick je design **Egony Stick V4 (Ebyte ver.)** takze soubor CC1352P2_CC2652P_other_*.zip (Napr. CC1352P2_CC2652P_other_coordinator_20210708.zip)<br>
 https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator/Z-Stack_3.x.0/bin
 
-Router FW pro CC2652P neni custom a pouziva se standardni od Koenkk, tim padem neni zesilovac aktivni. Na router je lepsi pouzit CC2538.<br>
-https://github.com/Koenkk/Z-Stack-firmware/tree/master/router/Z-Stack_3.x.0/bin<br>
+Router FW pro CC2652P.<br>
+https://github.com/egony/cc2652p_E72-2G4M20S1E/tree/master/firmware/router<br>
 
 Koordinator FW pro CC2538 zde<br>
 https://github.com/jethome-ru/zigbee-firmware/tree/master/ti/coordinator/cc2538_cc2592 <br>
